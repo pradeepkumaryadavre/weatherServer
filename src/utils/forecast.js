@@ -9,7 +9,7 @@ const forecast = (letitude,longitude,callback)=>{
            }else if(body.error){
                callback('Cordinates are not tracaeable',undefined)
            }else{
-               callback(undefined, body.current.weather_descriptions+'. It is currently '+ body.current.temperature + ' degrees out. There is a '+ body.current.precip+'% chance of rain')
+               callback(undefined, body.current.weather_descriptions+'. It is currently '+ body.current.temperature + ' degrees out. There is a '+ body.current.precip+'% chance of rain and pressent humidity level is '+body.current.humidity)
            }
    
    
